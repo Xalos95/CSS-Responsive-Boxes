@@ -1,3 +1,49 @@
+*{
+  outline: 1px solid white;
+}
+
 body {
   background: peachpuff;
+  color: yellow;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+}
+
+.container{
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.a{
+  background: green;
+  flex-grow: 1;
+}
+
+.b, .c, .d, .e, .f, .g{
+  background: pink;
+  flex-grow: 1;
+}
+
+.h{
+  background: brown;
+  flex-grow: 6;
+}
+
+@media(min-width:600px){
+
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a{
+    width: 100vw;
+  }
+
+  .h{
+    width: 20vw;
+  }
 }

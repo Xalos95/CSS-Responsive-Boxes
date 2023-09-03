@@ -3,7 +3,6 @@
 }
 
 body{
-  background: grey;
   color: yellow;
   text-align: center;
   font-size: 2em;
@@ -32,11 +31,14 @@ body{
 
   .container{
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .a{
     width:100vw;
+  }
+
+  .b{
+    max-width:75vw;
   }
 }
 
